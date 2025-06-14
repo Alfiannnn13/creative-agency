@@ -21,13 +21,14 @@
     />
 
     <!-- preload images -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
   </head>
   <body>
     <!-- header -->
     <header class="header" data-header>
       <div class="container">
         <a href="#" class="logo">Cognitive</a>
-        <nav class="navbar active" data-navbar>
+        <nav class="navbar" data-navbar>
           <div class="wrapper">
             <a href="#" class="logo">Cognitive</a>
 
@@ -42,19 +43,21 @@
 
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="#home" class="data-nav-link">Home</a>
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
             </li>
             <li class="navbar-item">
-              <a href="#services" class="data-nav-link">Services</a>
+              <a href="#services" class="navbar-link" data-nav-link>Services</a>
             </li>
             <li class="navbar-item">
-              <a href="#features" class="data-nav-link">Features</a>
+              <a href="#features" class="navbar-link" data-nav-link>Features</a>
             </li>
             <li class="navbar-item">
-              <a href="#portfolio" class="data-nav-link">Portfolio</a>
+              <a href="#portfolio" class="navbar-link" data-nav-link
+                >Portfolio</a
+              >
             </li>
             <li class="navbar-item">
-              <a href="#blog" class="data-nav-link">Blog</a>
+              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
             </li>
           </ul>
         </nav>
@@ -68,6 +71,188 @@
         <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
     </header>
+
+    <!-- main -->
+    <main>
+      <article>
+        <!-- hero -->
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-tille">
+                Building Digital <span class="has-before">Product</span>, Brand
+                and Experience
+              </h1>
+
+              <p class="hero-text">
+                At Cognitive we specialize in designing, building, shipping and
+                scaling beautiful, usable products with blazing-fast efficiency
+              </p>
+
+              <div class="wrapper">
+                <a href="#" class="btn btn-primary has-before has-after">
+                  How it works
+                </a>
+
+                <button class="hero-btn" aria-label="cognitive promo">
+                  <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+                  <span class="span">behind the sceene</span>
+                </button>
+              </div>
+
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(241, 77%, 63%)"
+                  >
+                    <ion-icon name="logo-facebook"> </ion-icon>
+                    <span class="span">facebook</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(203, 89%. 50%)"
+                  >
+                    <ion-icon name="logo-twitter"> </ion-icon>
+                    <span class="span">twitter</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(0, 100%, 50%)"
+                  >
+                    <ion-icon name="logo-youtube"> </ion-icon>
+                    <span class="span">youtube</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.png"
+                width="794"
+                height="637"
+                alt="hero banner"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- service -->
+        <section class="section hero" id="service" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle">Our Services</p>
+
+            <h2 class="h2 section-title">
+              Managing your business with our
+              <span class="has-before">best service</span>
+
+              <ul class="grid-list">
+                <li>
+                  <div class="service-card" style="--color: 174, 77%, 50%">
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/service-icon-1.png"
+                        height="30"
+                        height="38"
+                        loading="lazy"
+                        alt="service icon"
+                      />
+                    </div>
+
+                    <h3 class="class">
+                      <a href="#" class="card-title"> Product Management </a>
+                    </h3>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-card" style="--color: 267, 76%, 57%">
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/service-icon-2.png"
+                        height="30"
+                        height="38"
+                        loading="lazy"
+                        alt="service icon"
+                      />
+                    </div>
+
+                    <h3 class="class">
+                      <a href="#" class="card-title">
+                        Web & Mobile Development
+                      </a>
+                    </h3>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-card" style="--color: 17, 100%, 68%">
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/service-icon-3.png"
+                        height="30"
+                        height="38"
+                        loading="lazy"
+                        alt="service icon"
+                      />
+                    </div>
+
+                    <h3 class="class">
+                      <a href="#" class="card-title"> Fast Customer Support </a>
+                    </h3>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-card" style="--color: 343, 98%, 60%">
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/service-icon-4.png"
+                        height="30"
+                        height="38"
+                        loading="lazy"
+                        alt="service icon"
+                      />
+                    </div>
+
+                    <h3 class="class">
+                      <a href="#" class="card-title"> Human Resources </a>
+                    </h3>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-card" style="--color: 210, 100%, 53%">
+                    <div class="card-icon">
+                      <img
+                        src="./assets/images/service-icon-5.png"
+                        height="30"
+                        height="38"
+                        loading="lazy"
+                        alt="service icon"
+                      />
+                    </div>
+
+                    <h3 class="class">
+                      <a href="#" class="card-title">
+                        Desain and Craetivites
+                      </a>
+                    </h3>
+                  </div>
+                </li>
+              </ul>
+            </h2>
+          </div>
+        </section>
+      </article>
+    </main>
 
     <!-- custom js -->
     <script src="./assets/js/script.js" defer></script>
